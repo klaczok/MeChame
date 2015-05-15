@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/txtBuscaLocal"
+        android:layout_width="350px"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25px"
+        android:layout_height="wrap_content"
+        android:hint="Procurar"
+        android:inputType="text"
+        android:layout_alignParentTop="true"
+        android:background="#ffffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ff000000"
+        android:textColorHint="#ed958b93"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBuscaLocal"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtBuscaLocal"
+        android:src="@drawable/lupa"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_alignBottom="@+id/txtBuscaLocal"
+        />
+
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="80px"
+
+        android:id="@+id/btnLembretes"
+        android:layout_marginBottom="46dp"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20px"
+        android:background="@drawable/marcador" />
+
+    <ImageButton
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:id="@+id/btnConfig"
+        android:layout_alignTop="@+id/btnLembretes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20px"
+
+        android:background="@drawable/confg" />
+
+</RelativeLayout>
